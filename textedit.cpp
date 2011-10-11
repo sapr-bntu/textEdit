@@ -33,7 +33,7 @@ TextEdit::TextEdit(QWidget *parent)
 
 
     {
-        QMenu *helpMenu = new QMenu("ֿמלמשü", this);
+        QMenu *helpMenu = new QMenu("ֿמלמשüs", this);
         menuBar()->addMenu(helpMenu);
         helpMenu->addAction(tr("About"), this, SLOT(about()));
         helpMenu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
