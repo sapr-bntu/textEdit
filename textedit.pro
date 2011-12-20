@@ -1,10 +1,10 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2011-09-20T10:14:04
+# Project created by QtCreator 2011-12-05T23:41:19
 #
 #-------------------------------------------------
 
-TEMPLATE        = app
+ TEMPLATE        = app
  TARGET          = textedit
 
  CONFIG          += qt warn_on
@@ -12,10 +12,12 @@ TEMPLATE        = app
  HEADERS         = textedit.h
  SOURCES         = textedit.cpp \
                    main.cpp
-QT       += sql
- RESOURCES += \
-    textedit.qrc \
+
+ RESOURCES += textedit.qrc \
     textedit.qrc
+ INCLUDEPATH += $(QTDIR)/src/gui/text
+ QT           += xml
+ LIBS += -lqaxcontainer
  build_all:!build_pass {
      CONFIG -= build_all
      CONFIG += release
