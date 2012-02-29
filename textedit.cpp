@@ -27,9 +27,7 @@
  #include <ActiveQt/qaxobject.h>
  #include <ActiveQt/qaxbase.h>
  #include <QProcess>
- #include <c:\Qt\2010.05\qt\src\gui\text\qzipreader_p.h>
- #include <c:\Qt\2010.05\qt\src\gui\text\qzipwriter_p.h>
- #include <c:\Qt\2010.05\qt\src\gui\text\qzip.cpp>
+
 
 
 
