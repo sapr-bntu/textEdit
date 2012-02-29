@@ -9,8 +9,11 @@ int main( int argc, char ** argv )
 
 
     QApplication a( argc, argv );
+    QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
+    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     TextEdit mw;
     mw.resize( 600, 500 );
     mw.show();
     return a.exec();
+
 }
